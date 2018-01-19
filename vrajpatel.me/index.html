@@ -1,0 +1,141 @@
+<!-- 
+1. Decrease font when resizing
+2. Place my picture on the logo
+4. one page scroll transition
+5. attach docs and projects to links 
+6. find logos for github, linkedin, news article
+7. <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="mainpage">
+        <img src="Assets/uwlogo.gif" alt="University of Waterloo logo" id="uwlogo">
+        <p style="font-size: 90px; text-align: center">VRAJ PATEL</p>
+        <p style="font-size: 30px; color: gray; text-align: center">1B Computer Science</p>
+        <p style="font-size: 30px; text-align: center; margin-top: 100px;">WELCOME TO MY ONLINE PROFILE! </p>
+        <p style="font-size: 20px; text-align: center; color: gray; margin-top: 20px">Please feel free to scroll down to continue!</p>
+    </div>
+
+    <div id="nasapage">
+        <h1 style="color: black">NASA Ames Space Settlement Contest</h1>
+        <h1 style="color: black; font-size: 20px; margin-top: 10px">SECOND PLACE INTERNATIONAL WINNERS!</h1>
+        <div id="nasainfocontainer">
+            <div style="height: 100%; width: 50%; float: left;">
+                <img id="nasateampic" src="Assets/nasateam.png">
+                <p id="nasaparag">
+                    This is the team I (beside our Team Manager Ms.Matei) had the privilege of working with! Each of us brought our own talents
+                    and expertise in separate fields. </p>
+                <p id="nasaparag">
+                    We were invited to attend the International Space Development Conference 2017 at St.Louis to present our ideas and learn
+                    of the ever-growing fields of space exploration. We decided to visit the Gateway Arch where we took this
+                    picture! </p>
+            </div>
+
+            <div style="height: 100%; width: 50%; float: right;">
+                <p id="nasaparag" style="text-align: center;"> Check out the recognition we have gotten below! Feel free to click on the documents below to get a detailed
+                    view.
+                </p>
+                <div id="buttoncontainer">
+                    <button class="nasadocbutton" style="font-size: 30px;">Prime Minister Justin Trudeau Recognizes Our Work</button>
+                    <button class="nasadocbutton" style="font-size: 30px;">Canadian Space Agency Congratulates Us</button>
+                    <button class="nasadocbutton" style="font-size: 25px;">Ms. Nikki Johal, Communications Assistance at Peel Board, thanks Central Peel S.S for supporting the
+                        team
+                    </button>
+                    <button class="nasadocbutton" style="font-size: 30px;">Official Certification from the National Space Society</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="workpage">
+        <h1 style="color: white">Work Experience</h1>
+        <p id="nasaparag" style="top: 10%; text-align: center; width: 50%"> Worked within the daughter company of Cluep, <span style="color: white; cursor: pointer;">YAAR</span> , as a Front-End and Junior Software Engineer.
+            The perfect way to start off my career in Computer Science and get my hands dirty with some Full-Stack developing. Within two months I was able to implement React.js, Node.js, Html/CSS and JQuery within projects.</p>
+        <img src="Assets/cluep.jpeg" id="nasateampic" style="width: 50%; top: 20%; cursor: pointer;">
+    </div>
+
+    <div id="projectspage">
+        <h1 style="color: rgba(22, 18, 18, 0.8)">Projects</h1>
+        <div id="projects">
+            <button id="b1" onmouseover="onHover(this)" onmouseout="notHover(this)" class="projectdiv">Roman Numeral Converter</button>
+            <button id="b2" onmouseover="onHover(this)" onmouseout="notHover(this)" class="projectdiv">Cipher MLH Hackathon: Handwriting Forger</button>
+            <button id="b3" onmouseover="onHover(this)" onmouseout="notHover(this)" class="projectdiv">Credit Card Validator</button>
+            <button id="b4" onmouseover="onHover(this)" onmouseout="notHover(this)" class="projectdiv">Pythagorean Tree Animated Scenery</button>
+            <button id="b5" onmouseover="onHover(this)" onmouseout="notHover(this)" class="projectdiv">Electric Bike and Generator</button>
+            <button id="b6" onmouseover="onHover(this)" onmouseout="notHover(this)" class="projectdiv">FRC Robotics</button>
+        </div>
+    </div>
+
+    <div id="awards-contactpage">
+        <h1 style="color: white">Contact Me</h1>
+        <h2 style="color: rgba(22, 18, 18, 0.8)">Email: vraj.p.patel@edu.uwaterloo.ca</h2>
+        <h2 style="color: rgba(22, 18, 18, 0.8)">Phone Number: 647-745-3442</h2>
+        <h2 style="color: white; margin: 80px;">Or Find Me On:</h2>
+        <div id="iconContainer">
+            <img id="icons" src="Assets/linkedinicon.png">
+            <img id="icons" src="Assets/githubicon.png">
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    var labelsarr = ["Roman Numeral Converter", "Cipher MLH Hackathon: Handwriting Forger", "Credit Card Validator",
+        "Pythagorean Tree Animated Scenery", "Electric Bike and Generator", "FRC Robotics"];
+
+
+    var descriparr = ["A Roman to Hindu Arabic Numbers (and vice-versa) converter which can convert ANY positive natural number",
+        "Consumes input texts from an individual to mimic the individual's physical writing style. Can be used to type text with the individuals writing style.",
+        "Validates credit card numbers of types: Visa, Master Card, Diners Club(outside and inside US and Canada), American Express, and Discover and can be used to generate valid credit card numbers.",
+        "Generates a Pythagorean Tree animated scenery which depends on the users choice of season, day time, and wind speed.",
+        "Constructed a bike designed to transform kinectic energy from pedalling into electrical and use it to charge a battery - which in turn supplies energy to the motor.",
+        "Design Lead for Central Peel Secondary School FRC Robotics team 2014-2016. Created designs of individual parts and assemblies used to materialize our robots."];
+
+    function onHover(elem) {
+        document.getElementById(elem.id).style.fontSize = "15px";
+
+        if (elem.id == "b1") {
+            elem.innerText = descriparr[0];
+        } else if (elem.id == "b2") {
+            elem.innerText = descriparr[1];
+        } else if (elem.id == "b3") {
+            elem.innerText = descriparr[2];
+        } else if (elem.id == "b4") {
+            elem.innerText = descriparr[3];
+        } else if (elem.id == "b5") {
+            elem.innerText = descriparr[4];
+        }
+        else {
+            elem.innerText = descriparr[5];
+        }
+    }
+
+    function notHover(elem) {
+        document.getElementById(elem.id).style.fontSize = "35px";
+        if (elem.id == "b1") {
+            elem.innerText = labelsarr[0];
+        } else if (elem.id == "b2") {
+            elem.innerText = labelsarr[1];
+        } else if (elem.id == "b3") {
+            elem.innerText = labelsarr[2];
+        } else if (elem.id == "b4") {
+            elem.innerText = labelsarr[3];
+        } else if (elem.id == "b5") {
+            elem.innerText = labelsarr[4];
+        }
+        else {
+            elem.innerText = labelsarr[5];
+        }
+    }
+</script>
+
+</html>
