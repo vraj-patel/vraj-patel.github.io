@@ -49,7 +49,7 @@ h2{
     height: 100vh;
     width: 100vw;
     /* background-image: url("Assets/spacebg.jpg"); */
-    background-color: whitesmoke;
+    background-color: white;
     background-repeat: repeat-y;
     background-size: 100% 100%;
 }
@@ -86,10 +86,9 @@ h2{
     width: 45%;
     height: 45%;
     float: left;
-    background-color: whitesmoke;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: gray;
+    background-color: #c12238;
     transition: background-color 1s; 
     color: white; 
 }
@@ -105,15 +104,9 @@ h2{
 
 #workpage {
     display: block;
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     background-color: #B0B0B0;
-}
-#clueppic{
-    transition-duration: 1s;
-}
-#clueppic:hover{
-    visibility: hidden; 
 }
 
 
@@ -131,7 +124,7 @@ h2{
     width: 46%;
     height: 30%;
     float: left;
-    background-color: gray;
+    background-color: #c12238;
     cursor: pointer;
     transition: background-color 1s; 
 }
